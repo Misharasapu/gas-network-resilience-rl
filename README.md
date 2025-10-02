@@ -17,23 +17,19 @@ Learned policies stabilize pressure better than random actions and show convergi
 
 ## Repository Structure
 
-gas-network-resilience-rl/
-│
-├─ src/                    # Core code (entry point)
-│  └─ main.py
-│
-├─ data/                   # Small CSVs used by main.py (original filenames preserved)
-│
-├─ figures/                # Plots and images generated during runs
-│
-├─ archive/                # Legacy scripts and experiments (kept out of main view)
-│
-├─ requirements.txt        # Python dependencies
-├─ .gitignore              # Standard Python ignores + data files
-└─ README.md               # This file
+- **src/** → core code (entry point, contains `main.py`)  
+- **data/** → small CSVs used by `main.py` (original filenames preserved)  
+- **figures/** → plots and images generated during runs  
+- **archive/** → legacy scripts and experiments (kept out of main view)  
+- **report/** → final project report (PDF)  
+- **requirements.txt** → Python dependencies  
+- **.gitignore** → standard Python ignores + data files  
+- **README.md** → this file  
 
 **Note**  
-Data CSVs were moved to data/ but kept with their original filenames for code consistency.
+Data CSVs were moved to `data/` but kept with their original filenames for code consistency.
+
+---
 
 ## Quick Start (Windows, Git Bash)
 
@@ -50,6 +46,8 @@ pip install -r requirements.txt
 
 ### 4) Run
 python src/main.py  
+
+---
 
 ## How It Works (high level)
 
